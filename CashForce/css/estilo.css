@@ -1,0 +1,120 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body, html {
+	height: 100%;
+	min-height: 640px;
+    font-family: 'DM Sans';
+}
+
+/* Fontes */
+
+@font-face {
+	font-family: 'DM Sans';
+	src: url("../fontes/DM_Sans/DMSans-Regular.ttf");
+}
+
+header {
+    background: #0B27FA;
+    padding: 40px 0px;
+}
+
+#ebook {
+    color: #00BA91;
+    font-size: 1.3em;
+    line-height: 40px;
+    letter-spacing: 0.2em;
+}
+
+#negocio {
+    color: white;
+    font-size: 2em;
+    letter-spacing: 0.05em;
+    line-height: 52px;
+}
+
+h1 {
+    text-indent: -10000px;
+}
+
+
+/* CSS Corpo do site*/
+
+section .container {
+    padding-top: 60px;
+}
+
+p {
+    font-family: 18px;
+    line-height: 32px;
+    padding-right: 30px;
+}
+
+span {
+    color: #0B27FA;
+}
+
+h3 {
+    color: #021B51;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+/* Formulário */
+
+label {
+    text-align: left;
+	display: block;
+    font-style: bold;
+    color: #021B51;
+}
+
+input {
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #021B51;
+    color: rgb(118, 118, 118);
+}
+
+select {
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #021B51;
+    color: rgb(118, 118, 118);
+}
+
+.espacamento {
+    margin: 25px 0px;
+}
+
+.botao {
+    background: #00BA91;
+    padding: 5px 10px;
+    transition: all 1s;
+    color: #021B51;
+} 
+
+.botao:hover {
+    background: #01d4a7;
+    cursor: pointer;
+}
+
+/* Rodapé */
+
+footer .container {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    color: #021B51;
+}
+
+#linkedin {
+    margin: 0px 15px 0px 45px;
+}
+
+a:hover {
+    text-decoration: none
+}
