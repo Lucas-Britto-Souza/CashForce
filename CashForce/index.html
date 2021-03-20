@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> <!-- Link para o Bootsrtap -->
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -12,27 +12,27 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="css/estilo.css">
-    <title>CashForce</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css"> <!-- Link para o Estilo -->
+    <title>CashForce</title> 
   </head>
 <body>
-    <header class="w-100 d-flex justify-content-center">
+    <header class="w-100 d-flex justify-content-center"> <!-- Início do Cabeçalho do Site -->
         <div class="container w-75">
-            <div class="text-center text-md-left"><img src="imagens/logo.png">
+            <div class="text-center text-md-left"><img src="imagens/logo.png"> <!-- O logo em telas menores fica no centro e em telas maiores na esquerda -->
             <img src="imagens/titulo.png"></div>
-            <h1>Cash Force</h1>
+            <h1>Cash Force</h1>  <!-- Título para acessibilidade caso leitores de tela não consigam interpretar -->
 
             <h2 id="ebook" class="text-uppercase text-nowrap">Ebook:</h2>
             <h2 id="negocio" class="text-nowrap">Fortaleça seu negócio em <br>
                 época de coronavírus com <br>
                 o nosso e-book</h2>
         </div>
-    </header>
+    </header> <!-- Fim do Cabeçalho do Site -->
 
-    <section>
-        <div class="container w-75 d-flex justify-content-center">
+    <section> <!-- Início do Corpo do Site (No caso só temos uma seção) -->
+        <div class="container w-75 d-flex justify-content-center"> <!-- Início do Container -->
             <div class="row">
-                <div class="col-md-6 mb-3 mb-md-0">
+                <div class="col-md-6 mb-3 mb-md-0"> <!-- Início dos textos do Container. Textos separados em duas colunas em telas maiores e apenas uma em telas menores -->
                 <p class="text-justify">
                     Com o novo cenário em que temos vivido, empresas que utilizam a tecnologia 
                     para atender seus consumidores tornam-se mais fortes e estratégicas. 
@@ -49,80 +49,80 @@
                 <p class="text-justify">
                     <span class="font-weight-bold">Baixe o e-book</span> agora mesmo e prepare sua empresa para este novo cenário.
                 </p>
-                </div>
+                </div> <!-- Fim dos textos do Container -->
 
-                <div class="col-md-6">
-                <h3 class="font-weight-bold">Baixe esse conteúdo gratuitamente</h3>
+                <div class="col-md-6"> <!-- Início da div do Formulário -->
+                    <h3 class="font-weight-bold">Baixe esse conteúdo gratuitamente</h3>
 
-                <form>
-                    <div class="espacamento">
-                    <label>Seu nome</label>
-	        		<input type="text" name="nome" id = "nome" required placeholder="Seu nome" autocomplete="off"> 
-                    </div>
+                    <form> <!-- Início do Formulário -->
+                        <div class="espacamento">
+                        <label>Seu nome</label>
+                        <input type="text" name="nome" id = "nome" required placeholder="Seu nome" autocomplete="off"> 
+                        </div>
 
-                    <div class="espacamento">
-                    <label>E-mail de trabalho</label>
-	        		<input type="email" name="email" id = "email" required placeholder="seuemail@dominio.com" autocomplete="off"> 
-                    </div>
+                        <div class="espacamento">
+                        <label>E-mail de trabalho</label>
+                        <input type="email" name="email" id = "email" required placeholder="seuemail@dominio.com" autocomplete="off"> 
+                        </div>
 
-                    <div class="espacamento">
-                    <label>Número de telefone</label>
-	        		<input type="tel" name="telefone" id="telefone" required placeholder="(11) 99999-9999" autocomplete="off">
-                    <script>
-                        $("#telefone").mask("(00) 00000-0000");
-                    </script>
-                    </div>
+                        <div class="espacamento">
+                        <label>Número de telefone</label>
+                        <input type="tel" name="telefone" id="telefone" required placeholder="(11) 99999-9999" autocomplete="off">
+                        <script> /* Máscara para formatação de número do telefone */
+                            $("#telefone").mask("(00) 00000-0000");
+                        </script>
+                        </div>
 
-                    <div class="espacamento">
-                    <label>Nome da empresa</label>
-	        		<input type="text" name="nome_empresa" id = "nome_empresa" required placeholder="Nome da empresa" autocomplete="off"> 
-                    </div>
+                        <div class="espacamento">
+                        <label>Nome da empresa</label>
+                        <input type="text" name="nome_empresa" id = "nome_empresa" required placeholder="Nome da empresa" autocomplete="off"> 
+                        </div>
 
-                    <div class="espacamento">
-                    <label>Cargo</label>
-                    <select name="cargo" value = "cargo" required>
-                        <option value="" disable selected>Seu cargo</option>
-                        <option>Gestor de Marketing</option>
-                        <option>Gerente de vendas</option>
-                        <option>Diretor Executivo</option>
-                        <option>Outro</option>
-                    </select>
-                    </div>
-
-                    <div class="espacamento">
-                        <label>Funcionário</label>
-                        <select name="cargo" value="funcionario" required>
-                            <option value="" disable selected>Selecione</option>
-                            <option>Comunicador</option>
-                            <option>Analista</option>
-                            <option>Programador</option>
+                        <div class="espacamento">
+                        <label>Cargo</label>
+                        <select name="cargo" value = "cargo" required>
+                            <option value="" disable selected>Seu cargo</option>
+                            <option>Gestor de Marketing</option>
+                            <option>Gerente de vendas</option>
+                            <option>Diretor Executivo</option>
                             <option>Outro</option>
                         </select>
-                    </div>              
+                        </div>
 
-                    <div class="espacamento">
-                    <label>Em qual segmento sua empresa se encaixa?</label>
-                    <select name="segmento_empresa" value="segmento" required>
-                        <option value="" disable selected>Selecione</option>
-                        <option>Comércio</option>
-                        <option>Indústria</option>
-                        <option>Prestação de Serviços</option>
-                        <option>Outro</option>
-                    </select>
-                    </div>
+                        <div class="espacamento">
+                            <label>Funcionário</label>
+                            <select name="cargo" value="funcionario" required>
+                                <option value="" disable selected>Selecione</option>
+                                <option>Comunicador</option>
+                                <option>Analista</option>
+                                <option>Programador</option>
+                                <option>Outro</option>
+                            </select>
+                        </div>              
 
-                    <div class="text-right">
-                    <input type="submit" value="Enviar" class="botao btn btn-default w-50 rounded border-0">
-                    </div>
-	        			
-                </form>
-                </div>
+                        <div class="espacamento">
+                        <label>Em qual segmento sua empresa se encaixa?</label>
+                        <select name="segmento_empresa" value="segmento" required>
+                            <option value="" disable selected>Selecione</option>
+                            <option>Comércio</option>
+                            <option>Indústria</option>
+                            <option>Prestação de Serviços</option>
+                            <option>Outro</option>
+                        </select>
+                        </div>
+
+                        <div class="text-right"> <!-- Botão para envio do Formulário -->
+                        <input type="submit" value="Enviar" class="botao btn btn-default w-50 rounded border-0" id="botao_marcador">
+                        </div>
+
+                    </form> <!-- Fim do Formulário -->
+                </div> <!-- Fim da Div do Formulário -->
             </div>
-        </div>
-    </section>
+        </div> <!-- Fim do Container -->
+    </section> <!-- Fim do Corpo do Site -->
 
-    <footer>
-        <div class="container w-75">
+    <footer> <!-- Início do Rodapé -->
+        <div class="container w-75"> <!-- Início do Container do Rodapé -->
             <div class="row">
                 <div class="col-md-12">
                 <small>© CashForce 2020</small>
@@ -130,8 +130,8 @@
                 <a href=""><button class="botao d-none d-sm-none d-md-inline w-25 rounded border-0">Quero conhecer</button></a>
                 </div>
             </div>
-        </div>
-    </footer>
+        </div> <!-- Fim do Container do Rodapé -->
+    </footer> <!-- Fim do Rodapé -->
 
 </body>
 </html>

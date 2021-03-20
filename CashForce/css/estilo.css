@@ -1,3 +1,7 @@
+/* Configurações CSS CashForce */
+
+/* Configurações Padrão */
+
 * {
 	margin: 0;
 	padding: 0;
@@ -15,6 +19,8 @@ body, html {
 	font-family: 'DM Sans';
 	src: url("../fontes/DM_Sans/DMSans-Regular.ttf");
 }
+
+/* CSS Cabeçalho do site */
 
 header {
     background: #0B27FA;
@@ -37,7 +43,6 @@ header {
 h1 {
     text-indent: -10000px;
 }
-
 
 /* CSS Corpo do site*/
 
@@ -88,13 +93,18 @@ select {
     cursor: pointer;
 }
 
+/* Configurações do Select e do Botão conforme o tamanho da tela.
+Nas telas menores existe uma seta vinculada ao select cargo.
+Nas telas maiores existem duas setas vinculadas ao select de funcionário e o de segmento
+Em telas menores há uma mudança na cor de fundo do botão para envio do formulário. */
+
 @media screen and (max-width: 767.97px) {
     select[value="cargo"] {
         background-image: url(../imagens/seta.png);
         background-repeat: no-repeat;
         background-position: 95%;
     }
-    .botao { 
+    #botao_marcador { 
         background: #00D999;
     }
 }
