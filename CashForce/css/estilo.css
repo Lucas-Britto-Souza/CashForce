@@ -25,13 +25,12 @@ header {
     color: #00BA91;
     font-size: 1.3em;
     line-height: 40px;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
 }
 
 #negocio {
     color: white;
     font-size: 2em;
-    letter-spacing: 0.05em;
     line-height: 52px;
 }
 
@@ -76,7 +75,6 @@ input {
     padding: 5px 10px;
     border-radius: 5px;
     border: 1px solid #021B51;
-    color: rgb(118, 118, 118);
 }
 
 select {
@@ -85,6 +83,28 @@ select {
     border-radius: 5px;
     border: 1px solid #021B51;
     color: rgb(118, 118, 118);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 767.97px) {
+    select[value="cargo"] {
+        background-image: url(../imagens/seta.png);
+        background-repeat: no-repeat;
+        background-position: 95%;
+    }
+    .botao { 
+        background: #00D999;
+    }
+}
+
+@media screen and (min-width: 767.98px) {
+    select[value="funcionario"], select[value="segmento"] {
+        background-image: url(../imagens/seta.png);
+        background-repeat: no-repeat;
+        background-position: 95%;
+    }
 }
 
 .espacamento {

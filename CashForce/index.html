@@ -18,8 +18,8 @@
 <body>
     <header class="w-100 d-flex justify-content-center">
         <div class="container w-75">
-            <img src="imagens/logo.png">
-            <img src="imagens/titulo.png">
+            <div class="text-center text-md-left"><img src="imagens/logo.png">
+            <img src="imagens/titulo.png"></div>
             <h1>Cash Force</h1>
 
             <h2 id="ebook" class="text-uppercase text-nowrap">Ebook:</h2>
@@ -32,7 +32,7 @@
     <section>
         <div class="container w-75 d-flex justify-content-center">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 mb-3 mb-md-0">
                 <p class="text-justify">
                     Com o novo cenário em que temos vivido, empresas que utilizam a tecnologia 
                     para atender seus consumidores tornam-se mais fortes e estratégicas. 
@@ -41,13 +41,13 @@
                     relacionamento entre Fornecedores, Compradores e Financiadores.
                 </p>
                 <p class="text-justify">
-                    A Cashforce traz o e-book: <span>Tecnologia como solução para empresas no cenário atual, </span>
+                    A Cashforce traz o e-book: <span class="font-weight-bold">Tecnologia como solução para empresas no cenário atual, </span>
                     um material exclusivo para você saber como a tecnologia e os processos de gestão 
                     alinhados são essenciais para a cadeia de suprimentos superar a crise causada pelo 
                     novo coronavírus. 
                 </p>
                 <p class="text-justify">
-                    <span>Baixe o e-book</span> agora mesmo e prepare sua empresa para este novo cenário.
+                    <span class="font-weight-bold">Baixe o e-book</span> agora mesmo e prepare sua empresa para este novo cenário.
                 </p>
                 </div>
 
@@ -80,26 +80,34 @@
 
                     <div class="espacamento">
                     <label>Cargo</label>
-	        		<input type="text" name="cargo" id = "cargo" required placeholder="Seu cargo" autocomplete="off">
-                    </div>
-
-                    <div class="espacamento">
-                    <label>Funcionários</label>
-                    <select name="funcionarios" required>
-                        <option value="" disable selected>Selecione</option>
-                        <option>Comunicador</option>
-                        <option>Analista</option>
-                        <option>Programador</option>
+                    <select name="cargo" value = "cargo" required>
+                        <option value="" disable selected>Seu cargo</option>
+                        <option>Gestor de Marketing</option>
+                        <option>Gerente de vendas</option>
+                        <option>Diretor Executivo</option>
+                        <option>Outro</option>
                     </select>
                     </div>
 
                     <div class="espacamento">
+                        <label>Funcionário</label>
+                        <select name="cargo" value="funcionario" required>
+                            <option value="" disable selected>Selecione</option>
+                            <option>Comunicador</option>
+                            <option>Analista</option>
+                            <option>Programador</option>
+                            <option>Outro</option>
+                        </select>
+                    </div>              
+
+                    <div class="espacamento">
                     <label>Em qual segmento sua empresa se encaixa?</label>
-                    <select name="segmento_empresa" required>
+                    <select name="segmento_empresa" value="segmento" required>
                         <option value="" disable selected>Selecione</option>
                         <option>Comércio</option>
                         <option>Indústria</option>
                         <option>Prestação de Serviços</option>
+                        <option>Outro</option>
                     </select>
                     </div>
 
@@ -119,7 +127,7 @@
                 <div class="col-md-12">
                 <small>© CashForce 2020</small>
                 <a href="https://www.linkedin.com/company/cash-force/"><img src="imagens/linkedin.png" id="linkedin"></a>
-                <a href=""><button class="botao d-sm-none d-md-inline w-25 rounded border-0">Quero conhecer</button></a>
+                <a href=""><button class="botao d-none d-sm-none d-md-inline w-25 rounded border-0">Quero conhecer</button></a>
                 </div>
             </div>
         </div>
